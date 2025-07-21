@@ -27,7 +27,7 @@ export default function PayoutPage() {
   const [summary, setSummary] = useState<SummaryStats | null>(null);
 
   useEffect(() => {
-    fetch('/api/payout')
+    fetch('/payout', { cache: 'no-store' })
       .then((res) => res.json())
       .then((json) => {
         // Filter out any summary rows accidentally mixed in
