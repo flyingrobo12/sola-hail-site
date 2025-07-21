@@ -145,8 +145,7 @@ export default function Home() {
           <p className="mt-4">These four files are the main React components for the website:</p>
           <ul className="list-disc list-inside">
           <li className="mt-4"><strong>app/page.tsx</strong> — Landing page showing Final Answer, Methodology, Code Walkthrough and Ideation sections</li>
-          <li><strong>app/payout/page.tsx</strong> - Displays annual event payout table</li>
-          <li><strong>components/PayoutTable.tsx</strong> — Reusable component to render payout tables</li>
+          <li><strong>app/payout/page.tsx</strong> - Fetches payout data and renders the full summary and data table directly in this file</li>
           <li><strong>styles/global.css</strong> — Custom styling matching Sola Insurance brand</li>
         </ul>
         <p className="mt-2">
