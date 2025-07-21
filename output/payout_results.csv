@@ -1,0 +1,19 @@
+Year,Hit,DistanceToPolygon_m,NumPolygons,TotalArea_km2,NearMiss,AdjustedPayout
+2011,True,0.00,555,23421.52,False,10000.00
+2012,False,1236.87,485,23440.71,True,2500.00
+2013,False,38378.20,391,15663.60,False,0.00
+2014,False,24971.83,369,10830.58,False,0.00
+2015,False,34925.34,534,21899.10,False,0.00
+2016,False,23382.67,538,19128.12,False,0.00
+2017,False,10172.50,503,18622.38,False,0.00
+2018,False,17410.57,271,10592.69,False,0.00
+2019,False,19439.07,514,19177.54,False,0.00
+2020,False,30251.68,370,15865.52,False,0.00
+
+Summary Statistics
+Total Years Analyzed,10
+Years with Payouts,1
+Expected Annual Payout,"$1,000.00"
+Years with Near Misses,1
+Near Miss Threshold (m),2000
+Total Adjusted Payout (with Near Miss Tiers),"$12,500.00"
