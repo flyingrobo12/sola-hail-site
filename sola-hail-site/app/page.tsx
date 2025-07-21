@@ -140,7 +140,7 @@ export default function Home() {
           <li><strong>analyzer.py</strong> — Core payout and event logic</li>
           <li><strong>spatial_utils.py</strong> — Geo calculations</li>
           <li><strong>debug_distance.py</strong> — Logs near-miss distances</li>
-          <li><strong>test_containment.py</strong> — Unit test coverage</li>
+          <li><strong>test_containment.py</strong> — Placeholder for spatial unit tests</li>
           </ul>
           <p className="mt-4">These four files are the main React components for the website:</p>
           <ul className="list-disc list-inside">
