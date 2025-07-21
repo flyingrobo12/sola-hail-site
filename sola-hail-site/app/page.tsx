@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface YearlyPayout {
   Year: string;
@@ -15,8 +16,6 @@ interface YearlyPayout {
 
 export default function Home() {
   const [data, setData] = useState<YearlyPayout[]>([]);
-  const [summaryRaw, setSummaryRaw] = useState<string>('');
-  const [summary, setSummary] = useState<any>({});
 
   useEffect(() => {
     async function fetchData() {
@@ -32,15 +31,6 @@ export default function Home() {
           console.error('Unexpected data format:', json);
         }
 
-        if (json.summary) {
-          setSummaryRaw(json.summary);
-          try {
-            const parsed = typeof json.summary === 'string' ? JSON.parse(json.summary) : json.summary;
-            setSummary(parsed);
-          } catch (e) {
-            console.error('Failed to parse summary JSON:', e);
-          }
-        }
       } catch (err) {
         console.error('Failed to fetch payout data:', err);
       }
@@ -62,7 +52,7 @@ export default function Home() {
           </a>
         </div>
         <div className="hero-image">
-          <img src="/hero.png" alt="Engineers smiling" />
+          <Image src="/hero.png" alt="Engineers smiling" width={500} height={400} />
         </div>
       </section>
 
@@ -115,7 +105,7 @@ export default function Home() {
   <h3 className="text-xl font-semibold mt-6 mb-2">Summary</h3>
   <p className="text-base mb-4 leading-relaxed">
     Over the course of the past decade, this analysis models the expected insurance liability from hail events
-    using historical geospatial polygon data and custom proximity-based logic. One year triggered a direct payout,
+    using historical geospatial polygon data and custom proximity based logic. One year triggered a direct payout,
     and one additional year qualified as a near miss under a 2,000-meter threshold. These conditions informed an
     <strong> expected annual payout</strong> estimation and a <strong>total adjusted payout</strong> projection. If
     similar event frequency continues, this data-driven model suggests that Sola Insurance should expect comparable
@@ -131,12 +121,12 @@ export default function Home() {
         <h2 className="text-2xl font-semibold">B. Methodology</h2>
         <ul className="list-disc list-inside">
           <li>Ingested 10 years of storm polygon data from annual GeoJSON files, each representing verified hail events.</li>
-          <li>Parsed and structured each year’s GeoJSON into a usable format for spatial analysis.</li>
+          <li>Parsed and structured each years GeoJSON into a usable format for spatial analysis.</li>
           <li>Defined the insured location as a fixed point and used the Shapely geometry library to determine whether that point was contained within any of the hailstorm polygons for that year.</li>
-          <li>For years without a direct polygon hit, computed the shortest distance in meters between the insured point and each polygon using Shapely's .distance() method.</li>
-          <li>Identified "near-miss" events as those within a 2,000-meter threshold from the insured location, reflecting plausible exposure to nearby storm activity.</li>
+          <li>For years without a direct polygon hit, computed the shortest distance in meters between the insured point and each polygon using Shapelys .distance() method.</li>
+          <li>Identified near-miss events as those within a 2,000-meter threshold from the insured location, reflecting plausible exposure to nearby storm activity.</li>
           <li>Classified storm events into binary Hit and Near Miss categories to enable payout logic.</li>
-          <li>Developed a probability-weighted payout model, where: Direct hits triggered full payout. Near misses received partial payouts scaled by proximity (e.g. 75% for within 500m, 50% for 500–1,000m, 25% for 1,000–2,000m).</li>
+          <li>Developed a probability weighted payout model where direct hits triggered full payout. Near misses received partial payouts scaled by proximity (e.g. 75% for within 500m, 50% for 500 to 1,000m, 25% for 1,000 to 2,000m).</li>
           <li>Aggregated adjusted payouts year over year and calculated a 10-year average to model long-term expected liability.</li>
           <li>Returned the structured results via a TypeScript API (/api/payout) and dynamically rendered a table with hit/miss status, proximity, polygon count, area, and final payout estimates.</li>
         </ul>
@@ -174,10 +164,10 @@ export default function Home() {
   <h2 className="text-2xl font-semibold">D. Ideation Process</h2>
   <p>
     I began this project thinking in terms of binary outcomes, but that felt too simplistic for how risk works in the real world.
-    As I explored the data more deeply, I noticed that some storms came close, but just barely missed. These near-misses weren’t random. They represented real risk exposure that traditional binary payout models completely ignore.
+    As I explored the data more deeply, I noticed that some storms came close, but just barely missed. These near-misses were not random. They represented real risk exposure that traditional binary payout models completely ignore.
   </p>
   <p className="mt-4">
-    That’s when I reimagined the payout structure using a distance-weighted logic. I categorized storm misses into proximity tiers and assigned them predictive value. This let the model reflect risk that builds gradually. 
+    That is when I reimagined the payout structure using a distance-weighted logic. I categorized storm misses into proximity tiers and assigned them predictive value. This let the model reflect risk that builds gradually. 
     I treated these tiers as probabilistic indicators of loss potential over time. This gave the model a more nuanced understanding of exposure across a decade of data.
   </p>
   <p className="mt-4">
