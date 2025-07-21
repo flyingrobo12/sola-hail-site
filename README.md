@@ -26,7 +26,7 @@ Based on ten years of storm polygon data, the model estimates an average annual 
 - `analyzer.py` — Main payout logic and distance-based classification
 - `spatial_utils.py` — Polygon containment and geospatial math
 - `debug_distance.py` — Logs for near-miss proximity analysis
-- `test_containment.py` — Unit tests for point-in-polygon validation
+- `test_containment.py` — Placeholder for unit tests
 
 ### React/Next.js Frontend (`/app`)
 
