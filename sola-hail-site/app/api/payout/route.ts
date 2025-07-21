@@ -19,8 +19,13 @@ export async function GET() {
     const parsed: YearlyPayout[] = JSON.parse(fileContent);
 
     return NextResponse.json(parsed);
-  } catch (err: any) {
+  } catch (err: unknown) {
+  if (err instanceof Error) {
+    console.error('Failed to load payout data:', err.message);
+  } else {
     console.error('Failed to load payout data:', err);
-    return new NextResponse('Error loading payout data', { status: 500 });
   }
+  return new NextResponse('Error loading payout data', { status: 500 });
+}
+
 }
