@@ -141,9 +141,11 @@ export default function Home() {
           <li><strong>spatial_utils.py</strong> — Geo calculations</li>
           <li><strong>debug_distance.py</strong> — Logs near-miss distances</li>
           <li><strong>test_containment.py</strong> — Unit test coverage</li>
-          <li className="mt-4"><strong>app/page.tsx</strong> — Landing page showing the Final Answer summary</li>
-          <li><strong>app/payout/page.tsx</strong> — Displays annual event payout table</li>
-          <li><strong>app/methodology/page.tsx</strong> — Step-by-step technical overview of the data processing</li>
+          </ul>
+          <p className="mt-4">These four files are the main React components for the website:</p>
+          <ul className="list-disc list-inside">
+          <li className="mt-4"><strong>app/page.tsx</strong> — Landing page showing Final Answer, Methodology, Code Walkthrough and Ideation sections</li>
+          <li><strong>app/payout/page.tsx</strong> - Displays annual event payout table</li>
           <li><strong>components/PayoutTable.tsx</strong> — Reusable component to render payout tables</li>
           <li><strong>styles/global.css</strong> — Custom styling matching Sola Insurance brand</li>
         </ul>
