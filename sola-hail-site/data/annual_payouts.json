@@ -1,0 +1,119 @@
+[
+  {
+    "Year": "2011",
+    "Hit": "True",
+    "DistanceToPolygon_m": "0.00",
+    "NumPolygons": "555",
+    "TotalArea_km2": "23421.52",
+    "NearMiss": "False",
+    "AdjustedPayout": "10000.00"
+  },
+  {
+    "Year": "2012",
+    "Hit": "False",
+    "DistanceToPolygon_m": "1236.87",
+    "NumPolygons": "485",
+    "TotalArea_km2": "23440.71",
+    "NearMiss": "True",
+    "AdjustedPayout": "2500.00"
+  },
+  {
+    "Year": "2013",
+    "Hit": "False",
+    "DistanceToPolygon_m": "38378.20",
+    "NumPolygons": "391",
+    "TotalArea_km2": "15663.60",
+    "NearMiss": "False",
+    "AdjustedPayout": "0.00"
+  },
+  {
+    "Year": "2014",
+    "Hit": "False",
+    "DistanceToPolygon_m": "24971.83",
+    "NumPolygons": "369",
+    "TotalArea_km2": "10830.58",
+    "NearMiss": "False",
+    "AdjustedPayout": "0.00"
+  },
+  {
+    "Year": "2015",
+    "Hit": "False",
+    "DistanceToPolygon_m": "34925.34",
+    "NumPolygons": "534",
+    "TotalArea_km2": "21899.10",
+    "NearMiss": "False",
+    "AdjustedPayout": "0.00"
+  },
+  {
+    "Year": "2016",
+    "Hit": "False",
+    "DistanceToPolygon_m": "23382.67",
+    "NumPolygons": "538",
+    "TotalArea_km2": "19128.12",
+    "NearMiss": "False",
+    "AdjustedPayout": "0.00"
+  },
+  {
+    "Year": "2017",
+    "Hit": "False",
+    "DistanceToPolygon_m": "10172.50",
+    "NumPolygons": "503",
+    "TotalArea_km2": "18622.38",
+    "NearMiss": "False",
+    "AdjustedPayout": "0.00"
+  },
+  {
+    "Year": "2018",
+    "Hit": "False",
+    "DistanceToPolygon_m": "17410.57",
+    "NumPolygons": "271",
+    "TotalArea_km2": "10592.69",
+    "NearMiss": "False",
+    "AdjustedPayout": "0.00"
+  },
+  {
+    "Year": "2019",
+    "Hit": "False",
+    "DistanceToPolygon_m": "19439.07",
+    "NumPolygons": "514",
+    "TotalArea_km2": "19177.54",
+    "NearMiss": "False",
+    "AdjustedPayout": "0.00"
+  },
+  {
+    "Year": "2020",
+    "Hit": "False",
+    "DistanceToPolygon_m": "30251.68",
+    "NumPolygons": "370",
+    "TotalArea_km2": "15865.52",
+    "NearMiss": "False",
+    "AdjustedPayout": "0.00"
+  },
+  {
+    "Year": "Summary Statistics"
+  },
+  {
+    "Year": "Total Years Analyzed",
+    "Hit": "10"
+  },
+  {
+    "Year": "Years with Payouts",
+    "Hit": "1"
+  },
+  {
+    "Year": "Expected Annual Payout",
+    "Hit": "$1,000.00"
+  },
+  {
+    "Year": "Years with Near Misses",
+    "Hit": "1"
+  },
+  {
+    "Year": "Near Miss Threshold (m)",
+    "Hit": "2000"
+  },
+  {
+    "Year": "Total Adjusted Payout (with Near Miss Tiers)",
+    "Hit": "$12,500.00"
+  }
+]
