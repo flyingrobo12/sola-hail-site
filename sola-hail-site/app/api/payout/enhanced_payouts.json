@@ -1,0 +1,102 @@
+[
+  {
+    "year": "2011",
+    "payout": 10000,
+    "area_multiplier": 1.47,
+    "directionality_bonus": 1.15,
+    "shape_complexity": 0.43,
+    "memory_zone_multiplier": 1.3,
+    "distance_m": 0.0,
+    "direct_hit": true
+  },
+  {
+    "year": "2012",
+    "payout": 8755.68,
+    "area_multiplier": 1.43,
+    "directionality_bonus": 1.15,
+    "shape_complexity": 0.56,
+    "memory_zone_multiplier": 1.22,
+    "distance_m": 1246.75,
+    "direct_hit": false
+  },
+  {
+    "year": "2013",
+    "payout": 2.1,
+    "area_multiplier": 1.0,
+    "directionality_bonus": 1.0,
+    "shape_complexity": 0.4,
+    "memory_zone_multiplier": 1.13,
+    "distance_m": 38378.2,
+    "direct_hit": false
+  },
+  {
+    "year": "2014",
+    "payout": 39.25,
+    "area_multiplier": 1.0,
+    "directionality_bonus": 1.05,
+    "shape_complexity": 0.43,
+    "memory_zone_multiplier": 1.28,
+    "distance_m": 24960.82,
+    "direct_hit": false
+  },
+  {
+    "year": "2015",
+    "payout": 3.84,
+    "area_multiplier": 1.0,
+    "directionality_bonus": 1.0,
+    "shape_complexity": 0.37,
+    "memory_zone_multiplier": 1.12,
+    "distance_m": 34925.34,
+    "direct_hit": false
+  },
+  {
+    "year": "2016",
+    "payout": 118.98,
+    "area_multiplier": 1.0,
+    "directionality_bonus": 1.05,
+    "shape_complexity": 0.97,
+    "memory_zone_multiplier": 1.27,
+    "distance_m": 23443.86,
+    "direct_hit": false
+  },
+  {
+    "year": "2017",
+    "payout": 870.09,
+    "area_multiplier": 1.26,
+    "directionality_bonus": 1.13,
+    "shape_complexity": 0.38,
+    "memory_zone_multiplier": 1.23,
+    "distance_m": 10172.5,
+    "direct_hit": false
+  },
+  {
+    "year": "2018",
+    "payout": 273.32,
+    "area_multiplier": 1.08,
+    "directionality_bonus": 1.0,
+    "shape_complexity": 0.69,
+    "memory_zone_multiplier": 1.19,
+    "distance_m": 17397.72,
+    "direct_hit": false
+  },
+  {
+    "year": "2019",
+    "payout": 130.73,
+    "area_multiplier": 1.07,
+    "directionality_bonus": 1.12,
+    "shape_complexity": 0.44,
+    "memory_zone_multiplier": 1.21,
+    "distance_m": 19439.07,
+    "direct_hit": false
+  },
+  {
+    "year": "2020",
+    "payout": 9.51,
+    "area_multiplier": 1.0,
+    "directionality_bonus": 1.0,
+    "shape_complexity": 0.36,
+    "memory_zone_multiplier": 1.12,
+    "distance_m": 30247.88,
+    "direct_hit": false
+  }
+]
